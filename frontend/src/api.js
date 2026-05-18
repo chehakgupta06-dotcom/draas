@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const BASE = process.env.REACT_APP_API_URL || 'https://draas-5vlw.onrender.com'
+
+;
 const api = axios.create({ baseURL: BASE });
 
 export const fetchDashboard   = ()         => api.get('/dashboard');
