@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/draas';
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://draas.netlify.app/'],
+  origin: ['http://localhost:3000', 'https://draas.netlify.app'],
   credentials: true
 }));
 app.use(express.json());
